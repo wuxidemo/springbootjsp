@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="/css/jquery.dataTables.css" rel="stylesheet" />
+    <script src="/js/jquery-3.3.1.min.js"></script>
+    <script src="/js/jquery.dataTables.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/vue.min.js"></script>
+
+    <title>vue.js页面</title>
+
+    <script>
+        $(document).ready(function () {
+            var app = new Vue({
+                el: '#app',
+                data: {
+                    message: 'Hello Vue! Click Show users'
+                }
+            })
+        })
+    </script>
+</head>
+<body>
+
+<a href="/users"><div id="app">
+    {{ message }}
+</div></a>
+</body>
+</html>
